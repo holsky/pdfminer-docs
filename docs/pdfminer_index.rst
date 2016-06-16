@@ -6,10 +6,10 @@ Python PDF parser and analyzer
 `Homepage <http://www.unixuser.org/~euske/python/pdfminer/index.html>`__
   `Recent Changes <#changes>`__   `PDFMiner API <programming.html>`__
 
--  `What's It? <#intro>`__
--  `Download <#download>`__
+-  `What's It?`_
+-  `Download`_
 
-`What's It? <>`__
+What's It?
 -----------------
 
 PDFMiner is a tool for extracting information from PDF documents. Unlike
@@ -21,7 +21,7 @@ as HTML). It has an extensible PDF parser that can be used for other
 purposes than text analysis.
 
 
-`Download <>`__
+Download
 ~~~~~~~~~~~~~~~
 
 | **Source distribution:**

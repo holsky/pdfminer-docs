@@ -4,7 +4,7 @@ PDFMiner
 Python PDF parser and analyzer
 
 `Homepage <http://www.unixuser.org/~euske/python/pdfminer/index.html>`_
-  `Recent Changes`_
+  `Recent Changes <#changes>`_
   `PDFMiner API <programming.html>`_
 
 -  `What's It?`_

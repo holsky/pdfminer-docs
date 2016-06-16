@@ -158,23 +158,23 @@ Options
 
 ``-o filename``
 
-Specifies the output file name. By default, it prints the extracted
-contents to stdout in text format.
+  Specifies the output file name. By default, it prints the extracted
+  contents to stdout in text format.
 
 ``-p pageno[,pageno,...]``
 
-Specifies the comma-separated list of the page numbers to be extracted.
-Page numbers start at one. By default, it extracts text from all the
-pages.
+  Specifies the comma-separated list of the page numbers to be extracted.
+  Page numbers start at one. By default, it extracts text from all the
+  pages.
 
 ``-c codec``
 
-Specifies the output codec.
+  Specifies the output codec.
 
 ``-t type``
 
-Specifies the output format. The following formats are currently
-supported.
+  Specifies the output format. The following formats are currently
+  supported.
 
 -  ``text`` : TEXT format. (Default)
 -  ``html`` : HTML format. Not recommended for extraction purposes
@@ -187,8 +187,8 @@ supported.
 
 ``-I image_directory``
 
-Specifies the output directory for image extraction. Currently only JPEG
-images are supported.
+  Specifies the output directory for image extraction. Currently only JPEG
+  images are supported.
 
 ``-M char_margin``
 
@@ -196,81 +196,81 @@ images are supported.
 
 ``-W word_margin``
 
-These are the parameters used for layout analysis. In an actual PDF
-file, text portions might be split into several chunks in the middle of
-its running, depending on the authoring software. Therefore, text
-extraction needs to splice text chunks. In the figure below, two text
-chunks whose distance is closer than the *char\_margin* (shown as *M*)
-is considered continuous and get grouped into one. Also, two lines whose
-distance is closer than the *line\_margin* (*L*) is grouped as a text
-box, which is a rectangular area that contains a "cluster" of text
-portions. Furthermore, it may be required to insert blank characters
-(spaces) as necessary if the distance between two words is greater than
-the *word\_margin* (*W*), as a blank between words might not be
-represented as a space, but indicated by the positioning of each word.
+  These are the parameters used for layout analysis. In an actual PDF
+  file, text portions might be split into several chunks in the middle of
+  its running, depending on the authoring software. Therefore, text
+  extraction needs to splice text chunks. In the figure below, two text
+  chunks whose distance is closer than the *char\_margin* (shown as *M*)
+  is considered continuous and get grouped into one. Also, two lines whose
+  distance is closer than the *line\_margin* (*L*) is grouped as a text
+  box, which is a rectangular area that contains a "cluster" of text
+  portions. Furthermore, it may be required to insert blank characters
+  (spaces) as necessary if the distance between two words is greater than
+  the *word\_margin* (*W*), as a blank between words might not be
+  represented as a space, but indicated by the positioning of each word.
+  
+  Each value is specified not as an actual length, but as a proportion of
+  the length to the size of each character in question. The default values
+  are M = 2.0, L = 0.5, and W = 0.1, respectively.
 
-Each value is specified not as an actual length, but as a proportion of
-the length to the size of each character in question. The default values
-are M = 2.0, L = 0.5, and W = 0.1, respectively.
-
-|image0|
+  |image0|
 
 ``-F boxes_flow``
 
-Specifies how much a horizontal and vertical position of a text matters
-when determining a text order. The value should be within the range of
--1.0 (only horizontal position matters) to +1.0 (only vertical position
-matters). The default value is 0.5.
+  Specifies how much a horizontal and vertical position of a text matters
+  when determining a text order. The value should be within the range of
+  -1.0 (only horizontal position matters) to +1.0 (only vertical position
+  matters). The default value is 0.5.
 
 ``-C``
 
-Suppress object caching. This will reduce the memory consumption but
-also slows down the process.
+  Suppress object caching. This will reduce the memory consumption but
+  also slows down the process.
 
 ``-n``
 
-Suppress layout analysis.
+  Suppress layout analysis.
 
 ``-A``
 
-Forces to perform layout analysis for all the text strings, including
-text contained in figures.
+  Forces to perform layout analysis for all the text strings, including
+  text contained in figures.
 
 ``-V``
 
-Allows vertical writing detection.
+  Allows vertical writing detection.
 
 ``-Y layout_mode``
 
-Specifies how the page layout should be preserved. (Currently only
-applies to HTML format.)
+  Specifies how the page layout should be preserved. (Currently only
+  applies to HTML format.)
 
--  ``exact`` : preserve the exact location of each individual character
-   (a large and messy HTML).
--  ``normal`` : preserve the location and line breaks in each text
-   block. (Default)
--  ``loose`` : preserve the overall location of each text block.
+  -  ``exact`` : preserve the exact location of each individual character
+     (a large and messy HTML).
+  -  ``normal`` : preserve the location and line breaks in each text
+     block. (Default)
+  -  ``loose`` : preserve the overall location of each text block.
 
 ``-E extractdir``
 
-Specifies the extraction directory of embedded files.
+  Specifies the extraction directory of embedded files.
 
 ``-s scale``
 
-Specifies the output scale. Can be used in HTML format only.
+  Specifies the output scale. Can be used in HTML format only.
 
 ``-m maxpages``
 
-Specifies the maximum number of pages to extract. By default, it
-extracts all the pages in a document.
+  Specifies the maximum number of pages to extract. By default, it
+  extracts all the pages in a document.
 
 ``-P password``
 
-Provides the user password to access PDF contents.
+  Provides the user password to access PDF contents.
 
 ``-d``
 
-Increases the debug level.
+  Increases the debug level.
 
 --------------
 
@@ -300,19 +300,20 @@ Options
 
 ``-a``
 
-Instructs to dump all the objects. By default, it only prints the
-document trailer (like a header).
+  Instructs to dump all the objects. By default, it only prints the
+  document trailer (like a header).
 
 ``-i objno,objno, ...``
 
-Specifies PDF object IDs to display. Comma-separated IDs, or multiple
+  Specifies PDF object IDs to display. Comma-separated IDs, or multiple
+
 ``-i`` options are accepted.
 
 ``-p pageno,pageno, ...``
 
-Specifies the page number to be extracted. Comma-separated page numbers,
-or multiple ``-p`` options are accepted. Note that page numbers start at
-one, not zero.
+  Specifies the page number to be extracted. Comma-separated page numbers,
+  or multiple ``-p`` options are accepted. Note that page numbers start at
+  one, not zero.
 
 ``-r`` (raw)
 
@@ -320,32 +321,32 @@ one, not zero.
 
 ``-t`` (text)
 
-Specifies the output format of stream contents. Because the contents of
-stream objects can be very large, they are omitted when none of the
-options above is specified.
+  Specifies the output format of stream contents. Because the contents of
+  stream objects can be very large, they are omitted when none of the
+  options above is specified.
 
-With ``-r`` option, the "raw" stream contents are dumped without
-decompression. With ``-b`` option, the decompressed contents are dumped
-as a binary blob. With ``-t`` option, the decompressed contents are
-dumped in a text format, similar to ``repr()`` manner. When ``-r`` or
-``-b`` option is given, no stream header is displayed for the ease of
-saving it to a file.
+  With ``-r`` option, the "raw" stream contents are dumped without
+  decompression. With ``-b`` option, the decompressed contents are dumped
+  as a binary blob. With ``-t`` option, the decompressed contents are
+  dumped in a text format, similar to ``repr()`` manner. When ``-r`` or
+  ``-b`` option is given, no stream header is displayed for the ease of
+  saving it to a file.
 
 ``-T``
 
-Shows the table of contents.
+  Shows the table of contents.
 
 ``-E directory``
 
-Extracts embedded files from the pdf into the given directory.
+  Extracts embedded files from the pdf into the given directory.
 
 ``-P password``
 
-Provides the user password to access PDF contents.
+  Provides the user password to access PDF contents.
 
 ``-d``
 
-Increases the debug level.
+  Increases the debug level.
 
 Changes
 --------------

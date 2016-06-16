@@ -176,14 +176,14 @@ Options
   Specifies the output format. The following formats are currently
   supported.
 
--  ``text`` : TEXT format. (Default)
--  ``html`` : HTML format. Not recommended for extraction purposes
-   because the markup is messy.
--  ``xml`` : XML format. Provides the most information.
--  ``tag`` : "Tagged PDF" format. A tagged PDF has its own contents
-   annotated with HTML-like tags. pdf2txt tries to extract its content
-   streams rather than inferring its text locations. Tags used here are
-   defined in the PDF specification (See §10.7 "*Tagged PDF*").
+  -  ``text`` : TEXT format. (Default)
+  -  ``html`` : HTML format. Not recommended for extraction purposes
+     because the markup is messy.
+  -  ``xml`` : XML format. Provides the most information.
+  -  ``tag`` : "Tagged PDF" format. A tagged PDF has its own contents
+     annotated with HTML-like tags. pdf2txt tries to extract its content
+     streams rather than inferring its text locations. Tags used here are
+     defined in the PDF specification (See §10.7 "*Tagged PDF*").
 
 ``-I image_directory``
 

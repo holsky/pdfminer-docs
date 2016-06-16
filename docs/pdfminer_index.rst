@@ -5,9 +5,6 @@ Python PDF parser and analyzer
 
 `Homepage`_   `Recent Changes`_   `PDFMiner API`_
 
--  `What’s It?`_
--  `Download`_
--  `Where to Ask`_
 -  `How to Install`_
 
    -  `CJK languages support`_
@@ -23,7 +20,7 @@ Python PDF parser and analyzer
 -  `Related Projects`_
 -  `Terms and Conditions`_
 
-`What’s It? <>`__
+What’s It?
 -----------------
 
 PDFMiner is a tool for extracting information from PDF documents. Unlike
@@ -54,7 +51,7 @@ such as XPdf.
 | **Online Demo:** (pdf -> html conversion webapp)
 | http://pdf2html.tabesugi.net:8080/
 
-`Download <>`__
+Download
 ~~~~~~~~~~~~~~~
 
 | **Source distribution:**
@@ -63,7 +60,7 @@ such as XPdf.
 | **github:**
 | https://github.com/euske/pdfminer/
 
-`Where to Ask <>`__
+Where to Ask
 ~~~~~~~~~~~~~~~~~~~
 
 | **Questions and comments:**

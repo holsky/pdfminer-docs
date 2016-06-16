@@ -5,7 +5,7 @@ Python PDF parser and analyzer
 
 `Homepage <http://www.unixuser.org/~euske/python/pdfminer/index.html>`_
   `Recent Changes <#changes>`_
-  `PDFMiner API <programming.rst>`_
+  `PDFMiner API <programming.html>`_
 
 What's It?
 -----------------

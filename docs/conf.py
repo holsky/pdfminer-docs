@@ -15,7 +15,7 @@ master_doc = 'index'
 exclude_patterns = []
 templates_path = ['_templates']
 
-project = u'pdfminer'
+project = u'pdfminer-docs'
 copyright = u'2016, Levia3'
 
 version = '0'

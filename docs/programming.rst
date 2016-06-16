@@ -1,4 +1,4 @@
-`[Back to PDFMiner] <#pdfminer_index.rst>`_
+`[Back to PDFMiner] <pdfminer_index.html>`_
 
 Programming with PDFMiner
 =========================
@@ -108,58 +108,58 @@ Figure 2. Layout objects and its tree structure
 
 ``LTPage``
 
-Represents an entire page. May contain child objects like ``LTTextBox``,
-``LTFigure``, ``LTImage``, ``LTRect``, ``LTCurve`` and ``LTLine``.
+  Represents an entire page. May contain child objects like ``LTTextBox``,
+  ``LTFigure``, ``LTImage``, ``LTRect``, ``LTCurve`` and ``LTLine``.
 
 ``LTTextBox``
 
-Represents a group of text chunks that can be contained in a rectangular
-area. Note that this box is created by geometric analysis and does not
-necessarily represents a logical boundary of the text. It contains a
-list of ``LTTextLine`` objects. ``get_text()`` method returns the text
-content.
+  Represents a group of text chunks that can be contained in a rectangular
+  area. Note that this box is created by geometric analysis and does not
+  necessarily represents a logical boundary of the text. It contains a
+  list of ``LTTextLine`` objects. ``get_text()`` method returns the text
+  content.
 
 ``LTTextLine``
 
-Contains a list of ``LTChar`` objects that represent a single text line.
-The characters are aligned either horizontaly or vertically, depending
-on the text's writing mode. ``get_text()`` method returns the text
-content.
+  Contains a list of ``LTChar`` objects that represent a single text line.
+  The characters are aligned either horizontaly or vertically, depending
+  on the text's writing mode. ``get_text()`` method returns the text
+  content.
 
 ``LTChar``
 
 ``LTAnno``
 
-Represent an actual letter in the text as a Unicode string. Note that,
-while a ``LTChar`` object has actual boundaries, ``LTAnno`` objects does
-not, as these are "virtual" characters, inserted by a layout analyzer
-according to the relationship between two characters (e.g. a space).
+  Represent an actual letter in the text as a Unicode string. Note that,
+  while a ``LTChar`` object has actual boundaries, ``LTAnno`` objects does
+  not, as these are "virtual" characters, inserted by a layout analyzer
+  according to the relationship between two characters (e.g. a space).
 
 ``LTFigure``
 
-Represents an area used by PDF Form objects. PDF Forms can be used to
-present figures or pictures by embedding yet another PDF document within
+  Represents an area used by PDF Form objects. PDF Forms can be used to
+  present figures or pictures by embedding yet another PDF document within
 a page. Note that ``LTFigure`` objects can appear recursively.
 
 ``LTImage``
 
-Represents an image object. Embedded images can be in JPEG or other
-formats, but currently PDFMiner does not pay much attention to graphical
-objects.
+  Represents an image object. Embedded images can be in JPEG or other
+  formats, but currently PDFMiner does not pay much attention to graphical
+  objects.
 
 ``LTLine``
 
-Represents a single straight line. Could be used for separating text or
-figures.
+  Represents a single straight line. Could be used for separating text or
+  figures.
 
 ``LTRect``
 
-Represents a rectangle. Could be used for framing another pictures or
-figures.
+  Represents a rectangle. Could be used for framing another pictures or
+  figures.
 
 ``LTCurve``
 
-Represents a generic Bezier curve.
+  Represents a generic Bezier curve.
 
 Also, check out `a more complete example by Denis
 Papathanasiou <http://denis.papathanasiou.org/?p=343>`_.

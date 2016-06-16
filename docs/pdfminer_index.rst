@@ -213,31 +213,7 @@ Each value is specified not as an actual length, but as a proportion of
 the length to the size of each character in question. The default values
 are M = 2.0, L = 0.5, and W = 0.1, respectively.
 
-→
-
-← *M*
-
-``Q u i``
-
-``c k``
-
-``b r o w``
-
-``n   f o x``
-
-↓
-
-→
-
-← *W*
-
-*L*
-
-+-----------------+-------+
-| ``j u m p s``   | ...   |
-+-----------------+-------+
-
-↑
+|image0|
 
 ``-F boxes_flow``
 
@@ -517,3 +493,5 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --------------
 
 Yusuke Shinyama (yusuke at cs dot nyu dot edu)
+
+.. |image0| image:: char-line-word_margin.png

@@ -19,11 +19,11 @@ reconstruct some of those structures by guessing from its positioning,
 but there's nothing guaranteed to work. Ugly, I know. Again, PDF is
 evil.
 
-[More technical details about the internal structure of PDF: "How to
-Extract Text Contents from PDF Manually" `(part
-1) <http://www.youtube.com/watch?v=k34wRxaxA_c>`_ `(part
-2) <http://www.youtube.com/watch?v=_A1M4OdNsiQ>`_ `(part
-3) <http://www.youtube.com/watch?v=sfV_7cWPgZE>`_]
+[More technical details about the internal structure of PDF:
+"How to Extract Text Contents from PDF Manually"
+`(part1) <http://www.youtube.com/watch?v=k34wRxaxA_c>`_
+`(part2) <http://www.youtube.com/watch?v=_A1M4OdNsiQ>`_
+`(part3) <http://www.youtube.com/watch?v=sfV_7cWPgZE>`_]
 
 Because a PDF file has such a big and complex structure, parsing a PDF
 file as a whole is time and memory consuming. However, not every part is
@@ -39,16 +39,9 @@ or images.
 
 Figure 1 shows the relationship between the classes in PDFMiner.
 
-.. raw:: html
-
-   <div align="center">
-
 |image0|
+
 Figure 1. Relationships between PDFMiner classes
-
-.. raw:: html
-
-   </div>
 
 Basic Usage
 ------------------
@@ -109,16 +102,9 @@ A layout analyzer returns a ``LTPage`` object for each page in the PDF
 document. This object contains child objects within the page, forming a
 tree structure. Figure 2 shows the relationship between these objects.
 
-.. raw:: html
-
-   <div align="center">
-
 |image1|
+
 Figure 2. Layout objects and its tree structure
-
-.. raw:: html
-
-   </div>
 
 ``LTPage``
 

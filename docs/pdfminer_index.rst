@@ -7,24 +7,6 @@ Python PDF parser and analyzer
   `Recent Changes <#changes>`_
   `PDFMiner API <programming.rst>`_
 
--  `What's It?`_
--  `Download`_
--  `Where to Ask`_
--  `How to Install`_
-
-   -  `CJK languages support <#cmap>`_
-
--  `Command Line Tools <#tools>`_
-
-   -  `pdf2txt.py <#pdf2txt>`_
-   -  `dumppdf.py <#dumppdf>`_
-   -  `PDFMiner API <programming.html>`_
-
--  `Changes`_
--  `TODO`_
--  `Related Projects`_
--  `Terms and Conditions`_
-
 What's It?
 -----------------
 

@@ -217,4 +217,3 @@ Yusuke Shinyama
 
 .. |image0| image:: objrel.png
 .. |image1| image:: layout.png
-

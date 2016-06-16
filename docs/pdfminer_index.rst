@@ -3,11 +3,28 @@ PDFMiner
 
 Python PDF parser and analyzer
 
-`Homepage <http://www.unixuser.org/~euske/python/pdfminer/index.html>`_
-  `Recent Changes <#changes>`_
-  `PDFMiner API <programming.html>`_
+`Homepage <http://www.unixuser.org/~euske/python/pdfminer/index.html>`__
+  `Recent Changes <#changes>`__   `PDFMiner API <programming.html>`__
 
-What's It?
+-  `What's It? <#intro>`__
+-  `Download <#download>`__
+-  `Where to Ask <#wheretoask>`__
+-  `How to Install <#install>`__
+
+   -  `CJK languages support <#cmap>`__
+
+-  `Command Line Tools <#tools>`__
+
+   -  `pdf2txt.py <#pdf2txt>`__
+   -  `dumppdf.py <#dumppdf>`__
+   -  `PDFMiner API <programming.html>`__
+
+-  `Changes <#changes>`__
+-  `TODO <#todo>`__
+-  `Related Projects <#related>`__
+-  `Terms and Conditions <#license>`__
+
+`What's It? <>`__
 -----------------
 
 PDFMiner is a tool for extracting information from PDF documents. Unlike
@@ -38,7 +55,7 @@ such as XPdf.
 | **Online Demo:** (pdf -> html conversion webapp)
 | http://pdf2html.tabesugi.net:8080/
 
-Download
+`Download <>`__
 ~~~~~~~~~~~~~~~
 
 | **Source distribution:**
@@ -47,13 +64,13 @@ Download
 | **github:**
 | https://github.com/euske/pdfminer/
 
-Where to Ask
+`Where to Ask <>`__
 ~~~~~~~~~~~~~~~~~~~
 
 | **Questions and comments:**
 | http://groups.google.com/group/pdfminer-users/
 
-How to Install
+`How to Install <>`__
 ---------------------
 
 #. Install `Python <http://www.python.org/download/>`__ 2.6 or newer.
@@ -89,7 +106,7 @@ How to Install
 
 #. Done!
 
-For CJK languages
+`For CJK languages <>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 In order to process CJK languages, you need an additional step to take
@@ -118,12 +135,12 @@ following commands on a command line prompt:
         python tools\conv_cmap.py -c KSC-EUC=euc-kr -c KSC-Johab=johab -c KSCms-UHC=cp949 -c UniKS-UTF8=utf-8 pdfminer\cmap Adobe-Korea1 cmaprsrc\cid2code_Adobe_Korea1.txt
         python setup.py install
 
-Command Line Tools
+`Command Line Tools <>`__
 -------------------------
 
 PDFMiner comes with two handy tools: ``pdf2txt.py`` and ``dumppdf.py``.
 
-pdf2txt.py
+`pdf2txt.py <>`__
 ~~~~~~~~~~~~~~~~~
 
 ``pdf2txt.py`` extracts text contents from a PDF file. It extracts all
@@ -298,7 +315,7 @@ Increases the debug level.
 
 --------------
 
-dumppdf.py
+`dumppdf.py <>`__
 ~~~~~~~~~~~~~~~~~
 
 ``dumppdf.py`` dumps the internal contents of a PDF file in pseudo-XML
@@ -371,7 +388,7 @@ Provides the user password to access PDF contents.
 
 Increases the debug level.
 
-Changes
+`Changes <>`__
 --------------
 
 -  2014/03/28: Further bugfixes.
@@ -470,7 +487,7 @@ Changes
 -  2007/12/31: Initial release.
 -  2004/12/24: Start writing the code out of boredom...
 
-TODO
+`TODO <>`__
 -----------
 
 -  `PEP-8 <http://www.python.org/dev/peps/pep-0008/>`__ and
@@ -480,7 +497,7 @@ TODO
    Type1 font file analysis, etc.)
 -  Crypt stream filter support. (More sample documents are needed!)
 
-Related Projects
+`Related Projects <>`__
 -----------------------
 
 -  `pyPdf <http://pybrary.net/pyPdf/>`__
@@ -488,7 +505,7 @@ Related Projects
 -  `pdfbox <http://www.pdfbox.org/>`__
 -  `mupdf <http://mupdf.com/>`__
 
-Terms and Conditions
+`Terms and Conditions <>`__
 ---------------------------
 
 (This is so-called MIT/X License)

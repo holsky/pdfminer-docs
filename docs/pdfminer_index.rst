@@ -306,8 +306,7 @@ Options
 ``-i objno,objno, ...``
 
   Specifies PDF object IDs to display. Comma-separated IDs, or multiple
-
-``-i`` options are accepted.
+  ``-i`` options are accepted.
 
 ``-p pageno,pageno, ...``
 

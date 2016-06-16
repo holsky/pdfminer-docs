@@ -1,5 +1,4 @@
-### [pdfminer docs for ReadTheDocs](
-    ReadTheDocs: http://pdfminer-docs.readthedocs.io)
+### [pdfminer docs for ReadTheDocs](ReadTheDocs: http://pdfminer-docs.readthedocs.io)
 
 - ReStructuredTexts converted by pandoc.
 ```

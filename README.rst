@@ -1,10 +1,10 @@
-pdfminer docs for ReadTheDocs_
+:pdfminer docs for ReadTheDocs_:
 
 .. _ReadTheDocs: http://pdfminer-docs.readthedocs.io
 
-- ReStructuredTexts converted by pandoc.
+  ReStructuredTexts converted by pandoc.
 
-::
+  ::
 
     docker pull jagregory/pandoc
     docker run -v `pwd`:/source jagregory/pandoc \

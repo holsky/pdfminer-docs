@@ -16,7 +16,7 @@ exclude_patterns = []
 templates_path = ['_templates']
 
 project = u'pdfminer-docs'
-copyright = u'2016, Levia3'
+copyright = u'2004-2013,Yusuke Shinyama <yusuke at cs dot nyu dot edu>'
 
 version = '0'
 release = '0.0.1'

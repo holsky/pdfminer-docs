@@ -87,7 +87,10 @@ Here is a typical way to use the layout analysis function:
 
         from pdfminer.layout import LAParams
         from pdfminer.converter import PDFResourceManager, PDFPageAggregator
+        from pdfminer.pdfpage import PDFPage
+        from pdfminer.layout import LTTextBoxHorizontal
         
+        document = open('myfile.pdf, 'rb')
         #Create resource manager
         rsrcmgr = PDFResourceManager()
         # Set parameters for analysis.
@@ -95,10 +98,13 @@ Here is a typical way to use the layout analysis function:
         # Create a PDF page aggregator object.
         device = PDFPageAggregator(rsrcmgr, laparams=laparams)
         interpreter = PDFPageInterpreter(rsrcmgr, device)
-        for page in PDFPage.create_pages(document):
+        for page in PDFPage.get_pages(document):
             interpreter.process_page(page)
             # receive the LTPage object for the page.
             layout = device.get_result()
+            for element in layout:
+                if instanceof(element, LTTextBoxHorizontal)
+                    print(element.get_text())
 
 A layout analyzer returns a ``LTPage`` object for each page in the PDF
 document. This object contains child objects within the page, forming a

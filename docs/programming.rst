@@ -86,8 +86,10 @@ Here is a typical way to use the layout analysis function:
     ::
 
         from pdfminer.layout import LAParams
-        from pdfminer.converter import PDFPageAggregator
-
+        from pdfminer.converter import PDFResourceManager, PDFPageAggregator
+        
+        #Create resource manager
+        rsrcmgr = PDFResourceManager()
         # Set parameters for analysis.
         laparams = LAParams()
         # Create a PDF page aggregator object.
